@@ -1,14 +1,51 @@
+body{
+    margin:0;
+    font-size: 1.4em;
+    padding: 0;
+    line-height: 1.6em;
+}
+body > section{
+    clear: both;
+    padding: 50px 0;
+}
 
+h2{
+    color: #0c243d;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+.separador{
+    width: 40px;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #0c243d;
+    margin-bottom: 30px;
+}
+/**#princilap**/
+section#principal{
+    min-height: 700px;
+    padding-top: 100px;
+    background: #1e3d5a; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1e3d5a 1%, #0c223b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#1e3d5a), color-stop(100%,#0c223b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #1e3d5a 1%,#0c223b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #1e3d5a 1%,#0c223b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #1e3d5a 1%,#0c223b 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #1e3d5a 1%,#0c223b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3d5a', endColorstr='#0c223b',GradientType=0 ); /* IE6-9 */
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
+}
+/**APP**/
+section#app .social{
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    background-color: #123156;
+    margin: 0 auto;
+    line-height: 180px;
+}
 
 
 
