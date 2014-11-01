@@ -10,7 +10,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
         <link rel="stylesheet" href="../styles/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../styles/css/main.css">
@@ -21,7 +21,7 @@
     </head>
     <body>
         <section id="principal" class="text-center">
-            <img src="../styles/img/appPrincipal.png">
+            <img src="../styles/img/appPrincipal.png" class="img-responsive">
         </section><!--#/principal-->
         <section id="app">
             <div class="container ">
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </section><!--#/app-->
-        <section id="caracteristicas">
+        <section id="caracteristicas" class="grisBG">
             <h1 class="text-center">Caracteristicas</h1>
             <div class="separador"></div>
             <div class="container">
@@ -105,8 +105,8 @@
                             </div>
                         </div><!-- ./caracteristica -->
                     </section>
-                        <section class="col-md-4"><img src="../styles/img/appCentral.png"></section>
-                    <section class="col-md-4">
+                        <section class="col-md-4 text-center"><img id="appCentral" src="../styles/img/appCentral.png" class="img-responsive"></section>
+                    <section class="col-md-4 text-right">
                         <div class="caracteristica row">
                             <div class="col-md-4">
                                 <div class="icono"></div>
@@ -161,25 +161,25 @@
             <div class= "container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <a href="#modal" data-toggle="modal" data-image-url="../styles/img/boletos.png">
-                            <img src="../styles/img/boletos.png">
+                        <a href="#modal" data-toggle="modal" data-image-url="../styles/img/boletos.png" class="img-responsive">
+                            <img src="../styles/img/boletos.png" class="img-responsive">
                         </a>
                     </div><!--modal-->
                     <div class="col-sm-4">
-                        <a href="#modal" data-toggle="modal" data-image-url="../styles/img/trailers.png">
-                        <img src="../styles/img/trailers.png">
+                        <a href="#modal" data-toggle="modal" data-image-url="../styles/img/trailers.png" class="img-responsive">
+                        <img src="../styles/img/trailers.png" class="img-responsive">
                         </a>
                     </div>
                     <div class="col-sm-4">
-                        <a href="#modal" data-toggle="modal" data-image-url="../styles/img/trailers.png">
-                        <img src="../styles/img/trailers.png">
+                        <a href="#modal" data-toggle="modal" data-image-url="../styles/img/trailers.png" class="img-responsive">
+                        <img src="../styles/img/trailers.png" class="img-responsive">
                         </a>
                     </div>
                 </div><!--row-->
             </div><!--container-->
             <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-body">
-                    <img src="#">
+                <div class="modal-body" style="height: 90%">
+                    <img src="#" class="img-responsive">
                     <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
                 </div>
             </div>
@@ -190,18 +190,24 @@
         <section id="descargar">
             <h1 class="text-center">Descargar</h1>
             <div class="separador"></div>
-            <div class="container-fluid">
-                <img src="../styles/img/descargarApp.png">
-                <div class="container">
+            <div class="container-fluid" style="padding: 0; position:relative;">
+                <div class="contenidoDescarga">
+                    <div class="phone">
+                        <img src="../styles/img/descargarApp.png" class="img-responsive">
+                    </div>
+                    <div class="derechaVacio">
+                    </div>
+                </div>
+                <div class="container descarga">
                     <div class="row">
                         <div class="col-md-5 col-md-offset-7">
-                            <h2>Elige tu plataforma favorita</h2>
+                            <h2 class="text-center">Elige tu plataforma favorita</h2>
                             <div class="separador"></div>
-                            <section class="descargas text-center">
+                            <section class="plataformas text-center">
                                 <div class="col-md-5">
                                     Descarga para <span>Apple IOS</span>
                                 </div>
-                                <div class="col-md-5">
+                                <div class="col-md-5 col-md-offset-1">
                                     Descarga para <span>Android</span>
                                 </div>
                             </section>
@@ -210,34 +216,36 @@
                 </div>
             </div>
         </section><!--#/descargar-->
-        <section id="soporte">
+        <section id="soporte" class="AzulBG">
             <h1 class="text-center">Soporte</h1>
             <div class="separador"></div>
             <p class="text-center">Contactanos en el siguiente formulario</p>
+            <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <form class="form-horizontal">
                         <div class="form-group">
                             <div class="col-sm-12">
-                               <input type="text" class="form-control" placeholder="Nombre">
+                               <input type="text" class="form-control campos" placeholder="Nombre">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="email" class="form-control" placeholder="email">
+                                <input type="email" class="form-control campos" placeholder="email">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <textarea class="form-control" placeholder="Mensaje"></textarea>
+                                <textarea class="form-control campos" placeholder="Mensaje"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <button type="submit">Enviar</button></div>
+                                <button type="submit" class="btn btn-default">Enviar</button></div>
                             </div>
                     </form>
                 </div>
+            </div>
             </div>
         </section><!--#/soporte-->
 
