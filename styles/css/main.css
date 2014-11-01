@@ -42,6 +42,9 @@ h2.paralax{
 .grisBG{
     background-color: #f5f5f5;
 }
+.AzulBG{
+    background-color: #123156;
+}
 
 /**#princilap**/
 section#principal{
@@ -56,6 +59,10 @@ section#principal{
     background: linear-gradient(to bottom,  #1e3d5a 1%,#0c223b 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3d5a', endColorstr='#0c223b',GradientType=0 ); /* IE6-9 */
 
+}
+
+section#principal img{
+    margin: 0 auto;
 }
 /**APP**/
 section#app .social{
@@ -85,6 +92,9 @@ section#caracteristicas .icono{
     line-height: 140px;
     text-align: center;
 }
+section#caracteristicas img#appCentral{
+    margin: 0 auto;
+}
 
 /**pantallas**/
 div.modal-body{
@@ -103,11 +113,85 @@ section#paralax{
     background-size:cover;
 }
 
+/**descargar**/
+section#descargar div.contenidoDescarga{
+    height: 700px;
+}
 
+section#descargar div.phone{
+    width: 50%;
+    float: left;
+    height: 100%;
+    box-shadow:inset -7px -7px 12px -2px rgba(0,0,0,.15);
+    -webkit-box-shadow:inset -7px -7px 12px -2px rgba(0,0,0,.15);
+    -moz-box-shadow:inset -7px -7px 12px -2px rgba(0,0,0,.15);
+    z-index: 1;
+    text-align: center;
+}
+section#descargar div.derechaVacio{
+    width: 50%;
+    background-color:#f5f5f5;
+    float: right;
+    height:100%;
+    z-index:2;
+    background-image:url("../img/descargaAppBG.png")!important;
+    background-repeat: no-repeat;
+    background-position:right bottom;
+}
+section#descargar .descarga{
+    position: absolute;
+    left:0;
+    right:0;
+    margin-right:auto;
+    margin-left: auto;
+    top: 50px;
+}
+section#descargar .plataformas>div{
+    border-radius: 20px;
+    border: 3px solid #0c243d;
+    padding: 11px 0;
+    font-size: 1.2em;
+    position: relative;
+    padding-left: 50px;
+    color: #0c243d;
+}
+section#descargar .plataformas>div span{
+    font-weight: bold;
+}
 
+/**soporte**/
+section#soporte h1{
+    color: #ffffff;
+}
+section#soporte .separador{background-color: #ffffff}
+section#soporte p{font-size:2em;color: #ffffff;margin-bottom: 20px;}
 
+section#soporte .campos{
+    background-color: #123156;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    color: #ffffff;
+}
+section#soporte form{
+    margin-top: 30px;
+}
+section#soporte input{
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+section#soporte textarea{
+    min-height: 200px;
+}
+section#soporte button{
+    background:#ffffff;
+    border-radius: 14px;
+    padding: 5px 43px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
 
-
-
-
-
+/** truco para descubrir lo que se sale de la caja
+*{
+    outline: 1px solid red;
+}
+**/
