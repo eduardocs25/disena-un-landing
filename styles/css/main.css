@@ -4,16 +4,31 @@ body{
     padding: 0;
     line-height: 1.6em;
 }
+/** body section  este es para que solo se aplique en los principales section**/
 body > section{
     clear: both;
     padding: 50px 0;
 }
 
-h2{
-    color: #0c243d;
+h1,h2{
+    font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
+    color: #0c243d;
+}
+h1{
+    font-weight:700;
+    font-size: 2.4em;}
+h2{
     font-weight: 400;
-    font-size: 1.4em;
+    font-size: 1.4em;}
+h2.paralax{
+    font-size: 3.6em;
+    font-weight: 700;
+    text-transform:none;
+    color: #ffffff;
+    text-shadow: 0 7px 8px black;
+    -webkit-text-shadow: 0 7px 8px black;
+    -moz-text-shadow: 0 7px 8px black;
 }
 .separador{
     width: 40px;
@@ -23,6 +38,11 @@ h2{
     background-color: #0c243d;
     margin-bottom: 30px;
 }
+
+.grisBG{
+    background-color: #f5f5f5;
+}
+
 /**#princilap**/
 section#principal{
     min-height: 700px;
@@ -47,7 +67,41 @@ section#app .social{
     line-height: 180px;
 }
 
+/**caracteristicas**/
+section#caracteristicas p{
+    font-size: .9em;
+    color: #858585;
+}
+section#caracteristicas .caracteristica{
+    margin-bottom: 10px;
+    clear: both;
+}
+section#caracteristicas .icono{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #123156;
+    margin: 0 auto;
+    line-height: 140px;
+    text-align: center;
+}
 
+/**pantallas**/
+div.modal-body{
+    text-align: center;
+}
+.modal-body img{
+    max-height:90%;
+}
+
+/**paralax**/
+section#paralax{
+    height:500px;
+    background-image:url("../img/ipadApp.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
 
 
 
